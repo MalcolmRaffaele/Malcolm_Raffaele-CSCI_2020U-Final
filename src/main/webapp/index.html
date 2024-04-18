@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tic Tac Toe</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<script src="js/main.js"></script>
+<body>
+<div class="topnav">
+    Very cool tic tac toe
+</div>
+<div class="sidenav">
+    Select Player:
+    <br>
+    <br>O
+    <label class="switch">
+        <input type="checkbox" id="token">
+        <span class="slider round"></span>
+    </label>X
+    <br><br>
+    Create new room:
+    <br><br>
+    <div class="row">
+        <input type="text" id="room_code" size="12">
+        <button id="btRoom" onclick="enterRoom()">Create</button>
+    </div>
+    <br>
+    Join existing room:
+    <br>
+    <br>
+    <table id="chart">
+        <tbody>
+        <tr>
+            <tb><button>Join Room ___</button></tb>
+            <tb><button>Close</button></tb>
+        </tr>
+        </tbody>
+    </table>
+    </div>
+
+    <div id="board_zone">
+        <h1 class="player_indicator"></h1>
+        <div class="board" id="board">
+            <div class="board_tile remove-left-border remove-top-border">1</div>
+            <div class="board_tile remove-top-border">2</div>
+            <div class="board_tile remove-right-border remove-top-border">3</div>
+            <div class="board_tile remove-left-border">4</div>
+            <div class="board_tile">5</div>
+            <div class="board_tile remove-right-border">6</div>
+            <div class="board_tile remove-left-border remove-bottom-border">7</div>
+            <div class="board_tile remove-bottom-border">8</div>
+            <div class="board_tile remove-right-border remove-bottom-border">9</div>
+        </div>
+        <div class="modal">
+            <div class="modal_body">
+                <div class="message"></div>
+                <button class="reset_btn">Play Again</button>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
